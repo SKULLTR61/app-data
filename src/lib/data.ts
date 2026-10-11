@@ -1,6 +1,6 @@
 // Adım 4: Veri modeli — şimdilik sabit (mock) veri, ileride bir API'den gelebilir
 
-export type Kategori = "Futbol" | "Basketbol" | "Konser" | "Tiyatro";
+export type Kategori = "Futbol" | "Basketbol" | "Konser" | "Tiyatro" | "Otopark";
 
 export interface BiletKategorisi {
   ad: string;
