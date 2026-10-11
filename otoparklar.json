@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "ad": "Kadıköy Meydan Otoparkı",
+    "ilce": "Kadıköy",
+    "kapasite": 200,
+    "dolu": 154,
+    "saatlikUcret": 40,
+    "tip": "kapali"
+  },
+  {
+    "id": 2,
+    "ad": "Beşiktaş Çarşı Otoparkı",
+    "ilce": "Beşiktaş",
+    "kapasite": 120,
+    "dolu": 112,
+    "saatlikUcret": 55,
+    "tip": "kapali"
+  },
+  {
+    "id": 3,
+    "ad": "Şişli Metro Otoparkı",
+    "ilce": "Şişli",
+    "kapasite": 300,
+    "dolu": 96,
+    "saatlikUcret": 30,
+    "tip": "acik"
+  },
+  {
+    "id": 4,
+    "ad": "Üsküdar Sahil Otoparkı",
+    "ilce": "Üsküdar",
+    "kapasite": 150,
+    "dolu": 141,
+    "saatlikUcret": 45,
+    "tip": "acik"
+  },
+  {
+    "id": 5,
+    "ad": "Bakırköy AVM Otoparkı",
+    "ilce": "Bakırköy",
+    "kapasite": 500,
+    "dolu": 310,
+    "saatlikUcret": 50,
+    "tip": "kapali"
+  },
+  {
+    "id": 6,
+    "ad": "Sarıyer Merkez Otoparkı",
+    "ilce": "Sarıyer",
+    "kapasite": 80,
+    "dolu": 35,
+    "saatlikUcret": 25,
+    "tip": "acik"
+  }
+]
