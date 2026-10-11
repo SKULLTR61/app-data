@@ -4,7 +4,7 @@
 </script>
 
 <header class="ust">
-  <a href="/" class="logo">passo<span>klon</span></a>
+  <a href="/" class="logo">park<span>yeri</span></a>
   <button
     class="tema-dugme"
     onclick={() => tema.degistir()}
