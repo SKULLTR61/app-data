@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import OtoparkDetay from '../../components/OtoparkDetay.svelte';
+import { otoparklar, type Otopark } from '$lib/otoparklar';
+
+export function getStaticPaths() {
+  return otoparklar.map((o) => ({
+    params: { id: String(o.id) },
+    props: { otopark: o },
+  }));
+}
+
+interface Props {
+  otopark: Otopark;
+}
+
+const { otopark } = Astro.props;
+---
+
+<Layout title={`${otopark.ad} — ParkYeri`}>
+  <OtoparkDetay client:load otopark={otopark} />
+</Layout>
