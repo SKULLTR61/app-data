@@ -100,10 +100,10 @@
 <p><i>Repoyu fork'ladıktan sonra kendi bilgilerinizi doldurunuz:</i></p>
 
 <ul>
-  <li><b>Adı Soyadı:</b> <code>[Adınız Soyadınız]</code></li>
-  <li><b>Öğrenci No:</b> <code>[Öğrenci Numaranız]</code></li>
+  <li><b>Adı Soyadı:</b> <code>[Eren Muhammet Ahmetoğlu]</code></li>
+  <li><b>Öğrenci No:</b> <code>[2520171012]</code></li>
   <li><b>Şube:</b> <code>Şube 1</code></li>
-  <li><b>GitHub:</b> <code>[@kullanici-adiniz]</code></li>
+  <li><b>GitHub:</b> <code>[@SKULLTR61]</code></li>
   <li><b>Proje Fikri:</b> <a href="docs/proje-fikri.md">docs/proje-fikri.md</a></li>
 </ul>
 
