@@ -12,6 +12,13 @@
 
   const gecerli = $derived(ad.trim().length > 1 && eposta.includes("@"));
 
+  const bilgiSayfalari = [
+    { href: "/hakkinda", ad: "Hakkında" },
+    { href: "/iletisim", ad: "İletişim" },
+    { href: "/kosullar", ad: "Kullanım Koşulları" },
+    { href: "/gizlilik", ad: "Gizlilik Politikası" },
+  ];
+
   function girisYap(event: SubmitEvent) {
     event.preventDefault();
     kullanici = ad.trim();
@@ -29,9 +36,9 @@
     <div class="kart profil">
       <div class="avatar">{kullanici[0].toLocaleUpperCase("tr")}</div>
       <h2>Merhaba, {kullanici}</h2>
-      <p>{biletlerim.liste.length} biletiniz var</p>
+      <p>{biletlerim.liste.length} rezervasyonunuz var</p>
     </div>
-    <a class="btn" href="/biletlerim">Biletlerime git</a>
+    <a class="btn" href="/biletlerim">Rezervasyonlarıma git</a>
     <button class="btn ikincil" onclick={cikisYap}>Çıkış yap</button>
   {:else}
     <h1>Giriş yap</h1>
@@ -47,6 +54,13 @@
       <button class="btn" disabled={!gecerli}>Giriş yap</button>
     </form>
   {/if}
+
+  <div class="kart linkler">
+    <h3>Bilgi</h3>
+    {#each bilgiSayfalari as s}
+      <a href={s.href}>{s.ad} <span>›</span></a>
+    {/each}
+  </div>
 </div>
 
 <style>
@@ -109,5 +123,26 @@
     color: var(--yazi);
     border: 1px solid var(--kenar);
     margin-top: 8px;
+  }
+
+  .linkler {
+    padding: 8px 16px;
+  }
+
+  .linkler h3 {
+    margin: 8px 0;
+    font-size: 15px;
+    color: var(--yazi-soluk);
+  }
+
+  .linkler a {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-top: 1px solid var(--kenar);
+  }
+
+  .linkler a span {
+    color: var(--yazi-soluk);
   }
 </style>
