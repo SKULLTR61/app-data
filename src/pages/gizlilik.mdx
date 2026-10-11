@@ -1,0 +1,38 @@
+---
+layout: ../layouts/Layout.astro
+title: Gizlilik Politikası — ParkYeri
+---
+
+import CanliRozet from '../components/react/CanliRozet';
+
+<div class="sayfa">
+<div class="kart" style="padding: 24px;">
+
+# 🔒 Gizlilik Politikası
+
+Son güncelleme: 11 Ekim 2026
+
+Bu uygulama, İstinye Üniversitesi MYO063 Mobil Programlama dersi kapsamında geliştirilmiştir.
+
+## 1. Toplanan Veriler
+
+Uygulama kişisel verilerinizi harici bir sunucuya göndermez. Rezervasyonlarınız (plaka, otopark ve rezervasyon kodu dahil) ve tema tercihiniz yalnızca cihazınızın yerel hafızasında (localStorage) saklanır.
+
+## 2. Çerezler ve İzinler
+
+Uygulama izleme çerezi, reklam veya analiz aracı kullanmaz. Konum, kamera veya kişi listesi gibi cihaz izinleri istenmez.
+
+## 3. Verilerin Silinmesi
+
+Yerel verileri tarayıcı veya uygulama verilerini temizleyerek istediğiniz zaman silebilirsiniz.
+
+## 4. KVKK Bildirimi
+
+6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, bu uygulama kişisel veri işleyen bir veri sorumlusu değildir. Veriler yalnızca kullanıcının kendi cihazında kalır.
+
+<div style="margin-top: 16px;">
+<CanliRozet client:load etiket="Yerel Depolama Korumalı" />
+</div>
+
+</div>
+</div>
