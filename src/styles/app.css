@@ -1,12 +1,12 @@
 /* Adım 2: Global stil — tüm sayfaların ortak renkleri ve yardımcı sınıfları */
 :root {
-  --renk-ana: #e4002b;
-  --renk-koyu: #1a1a2e;
-  --zemin: #f4f5f7;
+  --renk-ana: #2563eb;
+  --renk-koyu: #0f172a;
+  --zemin: #f8fafc;
   --kart: #ffffff;
-  --yazi: #1a1a2e;
-  --yazi-soluk: #6b7280;
-  --kenar: #e5e7eb;
+  --yazi: #0f172a;
+  --yazi-soluk: #64748b;
+  --kenar: #e2e8f0;
   --radius: 14px;
   color-scheme: light;
 
@@ -18,12 +18,19 @@
 
 /* Adım 15: Gece modu — <html data-tema="gece"> olunca değişkenler koyulaşır */
 :root[data-tema="gece"] {
-  --zemin: #0f1117;
-  --kart: #1a1d26;
-  --yazi: #f3f4f6;
-  --yazi-soluk: #9ca3af;
-  --kenar: #2a2e3a;
+  --renk-ana: #3b82f6;
+  --renk-koyu: #020617;
+  --zemin: #0f172a;
+  --kart: #1e293b;
+  --yazi: #f8fafc;
+  --yazi-soluk: #94a3b8;
+  --kenar: #334155;
   color-scheme: dark;
+}
+
+/* Gece modunda açık mavi zeminde beyaz yazı kontrastı düşük kalır */
+:root[data-tema="gece"] .btn {
+  color: #0f172a;
 }
 
 * {
